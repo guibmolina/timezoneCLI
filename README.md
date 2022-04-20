@@ -1,6 +1,6 @@
 # 🛰️TimezoneCLI🛰️
 
-O projeto consiste em um CLI escrito em PHP que realiza funções baseadas em fuso horários de países.
+O projeto consiste em um CLI escrito em PHP que realiza funções baseadas em fusos horários de países.
 
 ## Instalação
 
