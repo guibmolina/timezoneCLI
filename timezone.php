@@ -39,6 +39,7 @@ function twoParam($command, $argument) {
         default => "Command $command not found" . PHP_EOL . "Run 'php ./timezone.php  --help for more information'"
     };
 }
+
 function threeParam($command, $argument, $secondArgument) {
     return match ($command) {
         '-t', '--timezone' => timezoneBetweenTwoCountries($argument, $secondArgument),
