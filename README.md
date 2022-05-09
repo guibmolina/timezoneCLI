@@ -14,7 +14,7 @@ chmod +x timezone.php
 ## Instalação via Docker
 
 ```bash
-docker run -it guibmolina/timezonecli:latest
+docker run -it guibmolina/timezonecli
 ```
 
 ## Algumas Funções
