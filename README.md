@@ -2,13 +2,19 @@
 
 O projeto consiste em um CLI escrito em PHP que realiza funções baseadas em fusos horários de países.
 
-## Instalação
+## Instalação via Git clone
 
 ```bash
 git clone https://github.com/guibmolina/timezoneCLI.git
 cd timezoneCLI/
 composer install
 chmod +x timezone.php
+```
+
+## Instalação via Docker
+
+```bash
+docker run -it guibmolina/timezonecli:latest
 ```
 
 ## Algumas Funções
