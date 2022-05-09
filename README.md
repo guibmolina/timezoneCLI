@@ -49,4 +49,4 @@ $ ./timezone.php -t BRA FRA
 $ ./timezone.php --help
 ```
 
-** As códigos dos países estão de acordo com a  **ISO 3166-1 alpha-3 (**[https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3)**)**
+** Os códigos dos países estão de acordo com a  **ISO 3166-1 alpha-3 (**[https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3)**)**
