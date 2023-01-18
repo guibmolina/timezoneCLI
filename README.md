@@ -17,7 +17,7 @@ chmod +x timezone.php
 docker run -it guibmolina/timezonecli
 ```
 
-## Algumas Funções
+## Ações
 
 - Mostrar a hora atual de um país:
 
