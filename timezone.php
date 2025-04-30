@@ -13,7 +13,7 @@ use Guilherme\Timezone\UseCases\TimezoneBetweenCountries\TimezoneBetweenCountrie
 use Guilherme\Timezone\ValueObject\Code;
 
 $result = match ($argc) {
-    2 => oneParam($argv[1]),
+    2 => oneParam($argv[1]) . PHP_EOL,
     3 => twoParam($argv[1], $argv[2]),
     4 => threeParam($argv[1], $argv[2], $argv[3]),
     default =>  help()
@@ -31,7 +31,8 @@ function oneParam($command)
     };
 }
 
-function twoParam($command, $argument) {
+function twoParam($command, $argument) 
+{
     return match ($command) {
         '-H', '--hour' => countryDate($argument),
         '-t', '--timezone' => timezoneGMT($argument),
@@ -40,7 +41,8 @@ function twoParam($command, $argument) {
     };
 }
 
-function threeParam($command, $argument, $secondArgument) {
+function threeParam($command, $argument, $secondArgument)
+{
     return match ($command) {
         '-t', '--timezone' => timezoneBetweenTwoCountries($argument, $secondArgument),
         default => "Command $command not found" . PHP_EOL . "Run 'php ./timezone.php  --help for more information'"
@@ -49,7 +51,8 @@ function threeParam($command, $argument, $secondArgument) {
 
 
 
-function countryDate(string $countryCode) {
+function countryDate(string $countryCode) 
+{
 
     if ($countryCode === '--help') {
         return hourHelp();
@@ -65,7 +68,7 @@ function countryDate(string $countryCode) {
         return $e->getMessage();
     }
 
-    return $date;
+    return $date . PHP_EOL;
 }
 
 function timezoneBetweenTwoCountries (string $countryCodeOrigin, string $countryCodeTarget): string
@@ -87,7 +90,8 @@ function timezoneBetweenTwoCountries (string $countryCodeOrigin, string $country
     return $timezoneCalculated;
 }
 
-function timezoneGMT(string $codeCountryTarget) {
+function timezoneGMT(string $codeCountryTarget)
+{
 
     if ($codeCountryTarget === '--help') {
         return timezoneHelp();
@@ -148,4 +152,4 @@ function countriesAndCodesHelp(): string
 
 }
 
-echo $result;
+echo $result . PHP_EOL;
