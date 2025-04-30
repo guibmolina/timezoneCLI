@@ -7,7 +7,7 @@ O projeto consiste em um CLI escrito em PHP que realiza funções baseadas em fu
 ```bash
 git clone https://github.com/guibmolina/timezoneCLI.git
 cd timezoneCLI/
-composer install
+composer dump-autoload
 chmod +x timezone.php
 ```
 
